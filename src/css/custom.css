@@ -1,0 +1,354 @@
+/**
+ * Custom CSS for react-native-pdf-jsi documentation
+ * Brand colors: Blue primary with purple accents
+ */
+
+/* Light mode theme colors */
+:root {
+  --ifm-color-primary: #0066cc;
+  --ifm-color-primary-dark: #005cb8;
+  --ifm-color-primary-darker: #0057ad;
+  --ifm-color-primary-darkest: #00478f;
+  --ifm-color-primary-light: #0070e0;
+  --ifm-color-primary-lighter: #0075eb;
+  --ifm-color-primary-lightest: #1a85ff;
+  
+  /* Accent colors */
+  --ifm-color-accent: #7c3aed;
+  --ifm-color-accent-dark: #6d28d9;
+  
+  /* Success/Warning/Danger */
+  --ifm-color-success: #10b981;
+  --ifm-color-warning: #f59e0b;
+  --ifm-color-danger: #ef4444;
+  
+  /* Typography */
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Courier New', monospace;
+  
+  /* Spacing */
+  --ifm-spacing-vertical: 1.5rem;
+  
+  /* Other */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 102, 204, 0.1);
+}
+
+/* Dark mode theme colors */
+[data-theme='dark'] {
+  --ifm-color-primary: #3b82f6;
+  --ifm-color-primary-dark: #2563eb;
+  --ifm-color-primary-darker: #1d4ed8;
+  --ifm-color-primary-darkest: #1e40af;
+  --ifm-color-primary-light: #60a5fa;
+  --ifm-color-primary-lighter: #93c5fd;
+  --ifm-color-primary-lightest: #bfdbfe;
+  
+  /* Accent colors for dark mode */
+  --ifm-color-accent: #a78bfa;
+  --ifm-color-accent-dark: #8b5cf6;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(59, 130, 246, 0.2);
+  --ifm-background-color: #0f172a;
+  --ifm-background-surface-color: #1e293b;
+}
+
+/* Hero section styling */
+.hero {
+  background: linear-gradient(135deg, #0066cc 0%, #7c3aed 100%);
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* Feature cards */
+.feature-card {
+  background: var(--ifm-background-surface-color);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h3 {
+  color: var(--ifm-color-primary);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+/* Call-to-action buttons */
+.cta-button {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  margin: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.cta-button-primary {
+  background: white;
+  color: var(--ifm-color-primary);
+}
+
+.cta-button-primary:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-button-secondary:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Code blocks */
+.prism-code {
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* Copy button for code blocks */
+.theme-code-block {
+  position: relative;
+}
+
+/* Comparison tables */
+.comparison-table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: collapse;
+}
+
+.comparison-table th {
+  background: var(--ifm-color-primary);
+  color: white;
+  padding: 1rem;
+  text-align: left;
+}
+
+.comparison-table td {
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid var(--ifm-table-border-color);
+}
+
+.comparison-table tr:nth-child(even) {
+  background: var(--ifm-background-surface-color);
+}
+
+/* Badges and tags */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0.25rem;
+}
+
+.badge-free {
+  background: #10b981;
+  color: white;
+}
+
+.badge-fast {
+  background: #f59e0b;
+  color: white;
+}
+
+.badge-compliant {
+  background: #0066cc;
+  color: white;
+}
+
+/* Video embeds */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 2rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+/* Alert boxes */
+.alert {
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+.alert-info {
+  background: rgba(0, 102, 204, 0.1);
+  border-color: var(--ifm-color-primary);
+}
+
+.alert-success {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: var(--ifm-color-success);
+}
+
+.alert-warning {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: var(--ifm-color-warning);
+}
+
+/* Installation command */
+.install-command {
+  background: var(--ifm-code-background);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1rem;
+  margin: 1.5rem 0;
+  position: relative;
+  overflow-x: auto;
+}
+
+/* Performance metrics */
+.metric-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--ifm-background-surface-color);
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-primary);
+}
+
+.metric-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--ifm-color-primary);
+  margin: 0.5rem 0;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: var(--ifm-color-gray-700);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .metric-label {
+  color: var(--ifm-color-gray-400);
+}
+
+[data-theme='dark'] .hero {
+  background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%);
+}
+
+/* Navbar enhancements */
+.navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background: var(--ifm-background-surface-color);
+  padding: 3rem 0 2rem;
+}
+
+.footer__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  margin-bottom: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ifm-background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-primary-dark);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Link styling */
+a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--ifm-color-primary-dark);
+  text-decoration: underline;
+}

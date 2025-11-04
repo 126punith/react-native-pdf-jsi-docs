@@ -1,0 +1,167 @@
+/**
+ * CSS module for homepage components
+ */
+
+.heroBanner {
+  background: linear-gradient(135deg, #0066cc 0%, #7c3aed 100%);
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroBanner h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.heroBanner .hero__subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.95;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.installCommand {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 1.25rem 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.installCommand code {
+  color: white;
+  font-size: 1.1rem;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', monospace;
+  background: transparent;
+}
+
+.features {
+  padding: 4rem 2rem;
+  background: var(--ifm-background-color);
+}
+
+.performance {
+  padding: 4rem 2rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.demoSection {
+  padding: 4rem 2rem;
+  background: var(--ifm-background-color);
+}
+
+.whyChoose {
+  padding: 4rem 2rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.ctaSection {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #0066cc 0%, #7c3aed 100%);
+  color: white;
+}
+
+.ctaSection h2 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.ctaSection p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.tableWrapper table {
+  min-width: 600px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 4rem 1.5rem;
+  }
+  
+  .heroBanner h1 {
+    font-size: 2.5rem;
+  }
+  
+  .heroBanner .hero__subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .installCommand code {
+    font-size: 0.9rem;
+  }
+  
+  .features,
+  .performance,
+  .demoSection,
+  .whyChoose,
+  .ctaSection {
+    padding: 3rem 1.5rem;
+  }
+  
+  .ctaSection h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heroBanner h1 {
+    font-size: 2rem;
+  }
+  
+  .heroBanner .hero__subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .buttons > * {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .installCommand {
+    padding: 1rem 1.5rem;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  .installCommand code {
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .heroBanner {
+  background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%);
+}
+
+[data-theme='dark'] .ctaSection {
+  background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%);
+}
