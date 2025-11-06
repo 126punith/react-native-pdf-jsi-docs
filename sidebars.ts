@@ -17,6 +17,14 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: "What's New",
+      collapsed: false,
+      items: [
+        'whats-new/v3.0.0',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Getting Started',
       collapsed: false,
       items: [
@@ -36,6 +44,7 @@ const sidebars: SidebarsConfig = {
         'features/bookmarks',
         'features/export',
         'features/pdf-operations',
+        'features/compression',
         'features/analytics',
         'features/advanced',
       ],
@@ -47,9 +56,12 @@ const sidebars: SidebarsConfig = {
       items: [
         'api/pdf-component',
         'api/hooks',
+        'api/jsi-api',
         'api/bookmark-api',
         'api/export-api',
-        'api/jsi-api',
+        'api/text-extractor-api',
+        'api/compression-api',
+        'api/file-management-api',
       ],
     },
     {

@@ -344,3 +344,9 @@ const handlePDFError = (error) => {
 
 **Ready for more?** Check out the [Advanced Features](/docs/features/bookmarks) to unlock the full potential of react-native-pdf-jsi!
 
+
+
+
+
+
+

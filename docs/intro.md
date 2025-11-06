@@ -14,26 +14,32 @@ react-native-pdf-jsi is a high-performance React Native PDF viewer component wit
 
 - ⚡ **80x Faster** - JSI acceleration for direct JavaScript-to-Native communication
 - ✅ **Google Play Compliant** - 16KB page size support for Android 15+
-- 📚 **Advanced Bookmarks** - Colors, notes, swipeable UI - all FREE
-- 🖼️ **Export to Images** - PNG/JPEG with quality control - FREE
-- ✂️ **PDF Operations** - Split, extract, merge operations - FREE
-- 📊 **Reading Analytics** - Session tracking and statistics - FREE
-- 🆓 **100% Free** - No licensing costs, no hidden fees
+- 📚 **Advanced Bookmarks** - 10 colors, notes, swipeable UI
+- 🖼️ **Export to Images** - PNG/JPEG with quality control
+- ✂️ **PDF Operations** - Split, extract, merge, rotate operations
+- 📊 **Reading Analytics** - Session tracking and detailed statistics
+- 🔧 **PDF Compression** - Reduce file sizes with smart presets
+- 📥 **File Management** - Download to storage, open folders (Android)
+- 🔍 **Text Extraction** - Extract and search text from PDFs
+- 🆓 **100% Free** - All features included, MIT licensed, no hidden fees
 
 ## Why Choose react-native-pdf-jsi?
 
-### The Only Free Library with Advanced Features
+### The Only Free Library with Enterprise Features
 
-Unlike other PDF libraries, **react-native-pdf-jsi** offers enterprise-grade features without any licensing costs:
+**react-native-pdf-jsi** offers enterprise-grade features that are completely free and open source:
 
 | Feature | react-native-pdf-jsi | Others |
 |---------|---------------------|--------|
-| JSI Acceleration | ✓ **FREE** | ✗ No |
-| Google Play 16KB | ✓ **Compliant** | ✗ Not supported |
-| Bookmarks | ✓ **FREE** | ✗ No |
-| Export | ✓ **FREE** | ✗ Limited/Paid |
-| PDF Operations | ✓ **FREE** | ✗ No |
-| Analytics | ✓ **FREE** | ✗ No |
+| JSI Acceleration | ✅ FREE | ❌ No |
+| Google Play 16KB | ✅ Compliant | ❌ Not supported |
+| Bookmarks (10 colors) | ✅ FREE | ❌ No |
+| Export Images/Text | ✅ FREE | ❌ Limited/Paid |
+| PDF Operations | ✅ FREE | ❌ No |
+| Reading Analytics | ✅ FREE | ❌ No |
+| PDF Compression | ✅ FREE | ❌ No |
+| Text Extraction | ✅ FREE | ❌ No |
+| File Management | ✅ FREE | ❌ No |
 
 ### Performance Breakthrough
 
@@ -56,12 +62,15 @@ Real-world benchmarks show dramatic performance improvements:
 - Smart 30-day caching
 - Text search with bounds
 
-### Advanced Features (FREE)
-- **Bookmarks** - Create, edit, delete with colors and notes
-- **Export** - Convert pages to PNG/JPEG images
-- **PDF Operations** - Split and extract pages
-- **Analytics** - Track reading sessions and progress
-- **Professional UI** - Ready-to-use components included
+### Advanced Features
+- **Bookmarks** - Create, edit, delete with 10 custom colors and notes
+- **Export** - Convert pages to PNG/JPEG images or extract text
+- **PDF Operations** - Split, merge, extract, rotate, and delete pages
+- **PDF Compression** - Reduce file sizes with smart presets
+- **Reading Analytics** - Track sessions, progress, speed, and engagement
+- **Text Extraction** - Extract and search text with statistics
+- **File Management** - Download to public storage, open folders (Android)
+- **Professional UI** - Production-ready components included
 
 ## Quick Start
 
