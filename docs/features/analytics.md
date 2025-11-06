@@ -838,5 +838,4 @@ useEffect(() => {
 ## See Also
 
 - [Bookmarks](/docs/features/bookmarks) - Bookmark system
-- [useAnalytics Hook](/docs/api/hooks#useanalytics) - React hook
-- [AnalyticsDashboard Component](/docs/api/analytics-components) - UI components
+- [Hooks API](/docs/api/hooks) - React hooks

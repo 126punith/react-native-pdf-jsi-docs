@@ -497,7 +497,7 @@ Now that you understand JSI acceleration:
 
 - **[Lazy Loading](/docs/features/lazy-loading)** - Optimize loading for large PDFs
 - **[Core Features](/docs/features/core-features)** - Master all PDF viewing features
-- **[Performance Tips](/docs/features/advanced#performance)** - Advanced optimization
+- **[Advanced Features](/docs/features/advanced)** - Advanced optimization
 
 Want to dive deeper into the technical implementation? Check the [JSI API Reference](/docs/api/jsi-api).
 
